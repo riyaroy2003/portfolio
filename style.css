@@ -1,0 +1,212 @@
+/* utility */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111;
+    color: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+a{
+    text-decoration: none;
+}
+/* manual style */
+
+.Container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+/* HEADER */
+.Header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    overflow: hidden;
+}
+nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    font-weight: bold;
+}
+a:hover{
+    border-bottom: 2px solid yellow;
+    transform: translateY(-2px);
+}
+/* HOME */
+#Home{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+}
+.intro{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.name{
+    font-size: 130px;
+    display: flex;
+    flex-direction: column;
+}
+.name span{
+    background-clip: text;
+    background: linear-gradient(to right,#222  ,#333, rgb(185, 185, 185));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.imgWrap{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.imgWrap img{
+    mix-blend-mode: lighten;
+    width: 50%;
+    height: 450px;
+}
+/* About */
+
+#AboutMe{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+.illustration, .achieve{
+    width: 40%;
+    height: 70%;
+}
+.illustration img{
+    width: 100%;
+}
+.achieve{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.achieve h1{
+    margin: 15px;
+}
+.achieve h1:hover{
+    border-bottom: 2px solid yellow;
+}
+.achieve p {
+    width: 70%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Experience  */
+
+#Experience{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.ExpWrapper{
+    width: 30%;
+    height: 60%;
+}
+.TitleWrap{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#EducationTitle , #ProjectTitle{
+    cursor: pointer;
+}
+.currentyellow{
+    border-bottom: 2px solid yellow;
+    padding-bottom: 2px;
+}
+.currentred{
+    border-bottom: 2px solid #b11226;
+    padding-bottom: 2px;
+}
+.ContentWrap{
+    display: flex;
+}
+
+#Education {
+    display: none;  
+}
+#Education > div{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+}
+#Education > div > span:nth-child(1){
+    color: #b11226;
+}
+#Education > div > span:nth-child(2){
+    font-style: italic;
+    font-size: 12px;
+}
+#Projects{
+    display: block;
+}
+#Projects div{
+    color: yellow !important;
+}
+#Projects > div{
+    margin: 15px 0;
+}
+
+/* Footer */
+
+#Footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+}
+.SocialWrap{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+}
+.SocialWrap a{
+    height: 70%;
+    background-color: transparent;
+}
+.SocialWrap a img{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
